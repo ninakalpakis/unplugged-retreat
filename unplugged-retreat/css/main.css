@@ -108,16 +108,18 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  margin: 0;
 }
 
-header .header-divider {
+.header-divider {
   width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -125,25 +127,54 @@ header nav {
 
 header nav ul {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
-  list-style-type: none;
-  justify-content: space-between;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /*----------Mobile Styles - Homepage----------*/
 
+/* Hero Area */
+
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-main .content-wrapper {
-  width: 100%;
-}
+/* Aside */
 
 aside {
   display: flex;
@@ -152,76 +183,49 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-
-}
-
-aside .form-description {
-
-}
-
-aside .form {
-
-}
+/* Features */
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  width: 55%;
 }
 
-.features-items {
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.features-item-description {
-
+.features p {
+  margin: 0;
 }
+
+/* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  width: 89%;
 }
-/*----------Footer----------*/
 
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
   width: 55%;
-  margin: 50px 0;
-}
-
-footer .footer-content {
-
-}
-
-footer .contact {
-
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .copyright {
-
+  margin: 20px 0;
 }
 
 /*----------Mobile Styles - About----------*/
@@ -232,14 +236,6 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-.mission-content {
-
-}
-
-.map {
-
-}
-
 .contact-section {
   display: flex;
   justify-content: center;
@@ -247,20 +243,8 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-.general-info {
-
-}
-
-.general-info-detailed {
-
-}
-
-.facilitator {
-
-}
-
-.facilitator-info-detailed {
-
+.contact-content p {
+  margin: 0;
 }
 
 /*----------Mobile Styles - FAQ----------*/
@@ -273,42 +257,19 @@ footer .copyright {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.faq-directions {
-
+.faq h2 {
+  margin-bottom: 40px;
 }
 
-.faq-size {
-
-}
-
-.faq-team {
-
-}
-
-.faq-wifi {
-
-}
-
-.faq-contact-section {
-
-}
-
-.contact-info {
-
-}
-
-.contact-info-detailed {
-
-}
-
-.faq-social {
-
+.faq-content {
+  margin-bottom: 50px;
 }
 /* ==========================================================================
    Helper classes
@@ -398,17 +359,130 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  /* General Styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+/* Header */
+  header {
+    justify-content: center;
+  }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  header .content-wrapper {
+    justify-content: center;
+    width: 82%;
+  }
 
+  header nav {
+    justify-content: center;
+    width: 16%;
+  }
+
+  header nav ul {
+    justify-content: center;
+  }
+
+  .header-divider {
+    display: none;
+  }
+/* Hero Area */
+
+  }
+  /* Aside */
+  aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 50%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 40%;
+  }
+
+  .features .features-item-description {
+    width: 20%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews article div {
+    width: 41%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 25%;
+  }
+/* About Styles */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 40%;
+  }
+
+  .contact-section .contact-wrapper h2 {
+    width: 67%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* FAQ Styles */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
