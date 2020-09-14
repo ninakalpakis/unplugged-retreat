@@ -216,6 +216,11 @@ footer p {
   margin: 0;
 }
 
+footer i {
+  font-size: 1.75em;
+  color: #527158;
+}
+
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -642,6 +647,10 @@ input [type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer i {
+    margin: 15px;
   }
 
   footer .copyright {
