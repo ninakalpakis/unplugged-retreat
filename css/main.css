@@ -368,23 +368,11 @@ input[type=button] {
 
 /*----------Mobile Styles - About----------*/
 .mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
-}
-
-.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
-}
-
-.contact-content p {
-  margin: 0;
 }
 
 .map figure {
@@ -401,6 +389,18 @@ input[type=button] {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /*----------Mobile Styles - FAQ----------*/
