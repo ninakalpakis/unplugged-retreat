@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -114,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -156,8 +159,6 @@ footer {
   flex-flow: row wrap;
   background-color: #202322;
 }
-
-/*----------Header Styles----------*/
 
 header {
   padding: 15px 0;
@@ -216,9 +217,8 @@ footer p {
   margin: 0;
 }
 
-footer i {
-  font-size: 1.75em;
-  color: #527158;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .content-wrapper {
@@ -240,6 +240,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 footer .copyright {
@@ -254,7 +258,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/hiker.jpg');
+  background: url('../img/hiker.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -270,19 +274,20 @@ footer .copyright {
 
 /* Aside */
 
+
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
 aside .form {
   margin-top: 30px;
 }
 
-input [type=text] {
+input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -290,7 +295,7 @@ input [type=text] {
   padding: 1em;
 }
 
-input [type=button] {
+input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -310,7 +315,7 @@ input [type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/features-background.png');
+  background: url('../img/features-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -549,7 +554,6 @@ input [type=button] {
   }
 
   header nav {
-    justify-content: center;
     width: 20%;
   }
 
@@ -602,6 +606,10 @@ input [type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
 
   .reviews article {
@@ -649,8 +657,9 @@ input [type=button] {
     line-height: 1.285;
   }
 
-  footer i {
-    margin: 15px;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -739,7 +748,7 @@ input [type=button] {
   }
 
   aside .content-wrapper .form-description,
-  aside . content-wrapper .form {
+  aside .content-wrapper .form {
     width: 30%;
   }
 
