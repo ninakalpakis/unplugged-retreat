@@ -406,11 +406,11 @@ input[type=button] {
 /*----------Mobile Styles - FAQ----------*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -433,6 +433,7 @@ input[type=button] {
 .faq-content h4 {
   line-height: 1.333;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
